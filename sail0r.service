@@ -1,0 +1,15 @@
+[Unit]
+Description=s0 deamon
+After=network.service
+
+[Service]
+User=root
+Group=root
+Type=simple
+WorkingDirectory=/root
+ExecStart=/root/sail0r
+RestartSec=15
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
